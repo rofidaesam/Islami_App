@@ -26,16 +26,16 @@ class _homeScreenState extends State<homeScreen> {
       children: [
         provider.isDark()?
         Image.asset(
-        'assets/images/bg3.png',
-        width: double.infinity,
-        height: double.infinity,
-        fit: BoxFit.fill,
-      )
-        : Image.asset(
-      'assets/images/home_dark_background.png',
-      width: double.infinity,
-      height: double.infinity,
-      fit: BoxFit.fill,
+          'assets/images/home_dark_background.png',
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.fill,
+        ):
+        Image.asset(
+          'assets/images/bg3.png',
+          width: double.infinity,
+          height: double.infinity,
+          fit: BoxFit.fill,
         ),
         Scaffold(
           appBar: AppBar(

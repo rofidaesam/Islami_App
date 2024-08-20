@@ -27,14 +27,15 @@ class _SuraDetailesScreenState extends State<SuraDetailesScreen> {
   }
     return Stack(children: [
       provider.isDark()?
-      Image.asset(
-        'assets/images/bg3.png',
+
+           Image.asset(
+        'assets/images/home_dark_background.png',
         width: double.infinity,
         height: double.infinity,
         fit: BoxFit.fill,
-      )
-          : Image.asset(
-        'assets/images/home_dark_background.png',
+      ):
+      Image.asset(
+        'assets/images/bg3.png',
         width: double.infinity,
         height: double.infinity,
         fit: BoxFit.fill,
