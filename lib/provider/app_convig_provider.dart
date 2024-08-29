@@ -5,7 +5,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 class AppConvigProvider extends ChangeNotifier
 {
 String applanguage ='en';
-ThemeMode appTheme =ThemeMode.dark;
+ThemeMode appTheme = ThemeMode.dark;
 void changeLanguage(String newlanguage)async
 {
   if(applanguage == newlanguage)
@@ -25,7 +25,7 @@ void changeTheme(ThemeMode newTheme)async
     }
   appTheme = newTheme;
   final SharedPreferences prefs = await SharedPreferences.getInstance();
-prefs.setBool('mode', appTheme as bool);
+prefs.setBool('isDark', appTheme == ThemeMode.dark);
   notifyListeners();
 }
 bool isDark()

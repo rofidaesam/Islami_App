@@ -34,6 +34,7 @@ class SettingsTab extends StatelessWidget {
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                
                 children: [
                   Text(
                     provider.applanguage == 'en'?

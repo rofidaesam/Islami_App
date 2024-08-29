@@ -29,6 +29,7 @@ class MyThemeData {
   ));
   static final ThemeData darktmood = ThemeData(
       canvasColor: Appcolores.primaryDarkColor,
+      primaryColor: Appcolores.primaryDarkColor,
       scaffoldBackgroundColor: Colors.transparent,
       appBarTheme:
       AppBarTheme(backgroundColor: Colors.transparent, centerTitle: true),
@@ -48,6 +49,7 @@ class MyThemeData {
               color: Appcolores.yellowColor)),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
           selectedItemColor: Appcolores.yellowColor,
+          backgroundColor: Appcolores.primaryDarkColor,
           showUnselectedLabels: true),
       bottomSheetTheme: BottomSheetThemeData(
         backgroundColor: Appcolores.primaryDarkColor),
